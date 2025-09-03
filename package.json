@@ -46,19 +46,20 @@
     "test": "lerna run --concurrency 2 test",
     "bench": "make -C bench",
     "update": "git submodule foreach git pull origin main && ts-node -O '{\"module\": \"commonjs\"}' ./packages/tldts-utils/bin/update.js",
-    "release": "auto shipit"
+    "release": "auto shipit",
+    "icann-suffixes": "node packages/tldts-icann/bin/icann-suffixes.js"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.1.1",
-    "auto": "^11.1.1",
+    "@types/node": "^24.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.41.0",
+    "@typescript-eslint/parser": "^8.41.0",
+    "auto": "^11.3.0",
     "benchmark": "^2.1.4",
-    "eslint": "^8.45.0",
-    "lerna": "^8.1.2",
+    "eslint": "^9.34.0",
+    "lerna": "^8.2.3",
     "patch-package": "^8.0.0",
-    "ts-node": "^10.0.0",
-    "typescript": "^5.0.4"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   },
   "auto": {
     "name": "Rémi Berson",
